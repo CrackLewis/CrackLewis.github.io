@@ -171,7 +171,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-04-03 09:56:49 / 修改时间：15:28:37" itemprop="dateCreated datePublished" datetime="2021-04-03T09:56:49+08:00">2021-04-03</time>
+              <time title="创建时间：2021-04-03 09:56:49 / 修改时间：15:35:42" itemprop="dateCreated datePublished" datetime="2021-04-03T09:56:49+08:00">2021-04-03</time>
             </span>
 
           
@@ -267,7 +267,8 @@
 <p>This part I’ll share how to upload your local pages to your repository.</p>
 <p>When you’re pretty sure that your GitHub account and <strong>GitHub pages</strong> repository are both ready, work on these steps as follows:</p>
 <p>Find the global setting file <code>_config.yml</code> in your blog folder (In my case it’s <code>F:\blog\_config.yml</code>) and open it. Check up at the tail of the file to find the <code>deploy</code> option, and modify it like this (Remember to change my username <code>CrackLewis</code> to yours):</p>
-<p><img src="/2021/04/03/Hello-World-0/Hello_World_0_2.png" alt="alt &quot;A Missing Image&quot;"></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"><span class="code">    type: git</span></span><br><span class="line"><span class="code">    repository: https://github.com/CrackLewis/CrackLewis.github.io.git</span></span><br><span class="line"><span class="code">    branch: master</span></span><br></pre></td></tr></table></figure>
+
 <p>Save the file and input <code>hexo d</code> in the Git Bash, then Git will start uploading your pages onto your GitHub repository. From my personal experiment, the operation has a VERY HIGH rate to fail for various reasons:</p>
 <ul>
 <li>Connect timeout</li>
